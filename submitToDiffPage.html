@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>
+    welcome to jhansi new page
+  </h1>
+  <p id="firstName"></p>
+  <p id="middleName"></p>
+  <p id="lastName"></p>
+  <script>
+    window.onload = onLoadFunc
+    // document.getElementById("firstName").innerHTML = " welcome to firstname " + window.onload
+    function onLoadFunc() {
+      const [first, middle, last] = JSON.parse(localStorage.getItem("jsArray"))
+      // console.log(names);
+      // console.log(first, middle, last)
+      let docEle = document.getElementById("firstName")
+      let docEle1 = document.getElementById("middleName")
+      let docEle2 = document.getElementById("lastName")
+      docEle.innerHTML = `firstName ${first}`
+      docEle1.innerHTML = `midName ${middle}`
+      docEle2.innerHTML = `lastName ${last}`
+
+
+    }
+  </script>
+</body>
+
+</html>

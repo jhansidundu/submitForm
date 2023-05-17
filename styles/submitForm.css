@@ -1,0 +1,12 @@
+.invisible {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.container {
+  padding: 50px;
+  background-color: lightblue;
+}
